@@ -92,7 +92,7 @@
         [result setObject:@"TRUE" forKey:NSHTTPCookieSecure];
     }
     [result setObject:cookie.value forKey:NSHTTPCookieValue];
-    [result setObject:[NSString stringWithFormat:@"%ld", cookie.version] forKey:NSHTTPCookieVersion];
+    [result setObject:[NSString stringWithFormat:@"%d", (unsigned int)cookie.version] forKey:NSHTTPCookieVersion];
     return result;
 }
 

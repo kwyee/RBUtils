@@ -25,6 +25,9 @@
 		EA1BD5BF1AFBBFBF0010FB7C /* RBUtilMath.h in Copy Files */ = {isa = PBXBuildFile; fileRef = EA1BD5A41AFBBE240010FB7C /* RBUtilMath.h */; };
 		EA1BD5C01AFBBFBF0010FB7C /* UIView+RBUtil.h in Copy Files */ = {isa = PBXBuildFile; fileRef = EA1BD5A61AFBBE240010FB7C /* UIView+RBUtil.h */; };
 		EA1BD5C11AFBBFBF0010FB7C /* RBCons.h in Copy Files */ = {isa = PBXBuildFile; fileRef = EA1BD5A01AFBBE240010FB7C /* RBCons.h */; };
+		EA1BD5C61AFBCA970010FB7C /* RBUtils.podspec in Resources */ = {isa = PBXBuildFile; fileRef = EA1BD5C51AFBCA970010FB7C /* RBUtils.podspec */; };
+		EA1BD5C81AFBCBD20010FB7C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA1BD5C71AFBCBD20010FB7C /* Foundation.framework */; };
+		EA1BD5CA1AFBCBD70010FB7C /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA1BD5C91AFBCBD70010FB7C /* QuartzCore.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,7 +83,9 @@
 		EA1BD5A51AFBBE240010FB7C /* RBUtilMath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RBUtilMath.m; sourceTree = "<group>"; };
 		EA1BD5A61AFBBE240010FB7C /* UIView+RBUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+RBUtil.h"; sourceTree = "<group>"; };
 		EA1BD5A71AFBBE240010FB7C /* UIView+RBUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+RBUtil.m"; sourceTree = "<group>"; };
-		EA1BD5C41AFBC8AE0010FB7C /* RBUtils.podspec.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = RBUtils.podspec.json; sourceTree = SOURCE_ROOT; };
+		EA1BD5C51AFBCA970010FB7C /* RBUtils.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = RBUtils.podspec; sourceTree = "<group>"; };
+		EA1BD5C71AFBCBD20010FB7C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		EA1BD5C91AFBCBD70010FB7C /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		EAD51E7586C4C18A5933A727 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -89,6 +94,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA1BD5CA1AFBCBD70010FB7C /* QuartzCore.framework in Frameworks */,
+				EA1BD5C81AFBCBD20010FB7C /* Foundation.framework in Frameworks */,
 				B149937A5D5D70ADB7B0911A /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -116,11 +123,12 @@
 		EA1BD5751AFBBD720010FB7C = {
 			isa = PBXGroup;
 			children = (
-				EA1BD5801AFBBD720010FB7C /* RBUtils */,
-				EA1BD58D1AFBBD720010FB7C /* RBUtilsTests */,
-				EA1BD57F1AFBBD720010FB7C /* Products */,
-				B03098EBD3CE92A1BF03F4CE /* Pods */,
 				FA8A24287D93C7C145F49F60 /* Frameworks */,
+				B03098EBD3CE92A1BF03F4CE /* Pods */,
+				EA1BD57F1AFBBD720010FB7C /* Products */,
+				EA1BD5801AFBBD720010FB7C /* RBUtils */,
+				EA1BD5C51AFBCA970010FB7C /* RBUtils.podspec */,
+				EA1BD58D1AFBBD720010FB7C /* RBUtilsTests */,
 			);
 			sourceTree = "<group>";
 		};
@@ -136,7 +144,6 @@
 		EA1BD5801AFBBD720010FB7C /* RBUtils */ = {
 			isa = PBXGroup;
 			children = (
-				EA1BD5C41AFBC8AE0010FB7C /* RBUtils.podspec.json */,
 				EA1BD5AF1AFBBE2A0010FB7C /* Foundation */,
 				EA1BD5A01AFBBE240010FB7C /* RBCons.h */,
 				EA1BD5A11AFBBE240010FB7C /* RBCons.m */,
@@ -184,6 +191,8 @@
 		FA8A24287D93C7C145F49F60 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				EA1BD5C91AFBCBD70010FB7C /* QuartzCore.framework */,
+				EA1BD5C71AFBCBD20010FB7C /* Foundation.framework */,
 				02C7CC1206F9FAE8E8E84841 /* libPods.a */,
 			);
 			name = Frameworks;
@@ -269,6 +278,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA1BD5C61AFBCA970010FB7C /* RBUtils.podspec in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -441,6 +451,7 @@
 		};
 		EA1BD5961AFBBD720010FB7C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EAD51E7586C4C18A5933A727 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -459,6 +470,7 @@
 		};
 		EA1BD5971AFBBD720010FB7C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5D0DC75299B7096A6503A561 /* Pods.release.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
