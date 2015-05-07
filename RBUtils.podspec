@@ -23,7 +23,7 @@ Pod::Spec.new do |s|
   s.requires_arc = true
 
   #s.resources = ['Pod/Assets/Scripts/*']
-  #s.exclude_files = "Pod/Assets/Scripts/*.{sh,swift}"
+  s.exclude_files = ['RBUtils.xcodeproj', 'RBUtils.xcworkspace', 'RBUtilsTests']
 
   s.public_header_files = 'RBUtils/**/*.h'
   s.requires_arc = true
