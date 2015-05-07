@@ -80,6 +80,7 @@
 		EA1BD5A51AFBBE240010FB7C /* RBUtilMath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RBUtilMath.m; sourceTree = "<group>"; };
 		EA1BD5A61AFBBE240010FB7C /* UIView+RBUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+RBUtil.h"; sourceTree = "<group>"; };
 		EA1BD5A71AFBBE240010FB7C /* UIView+RBUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+RBUtil.m"; sourceTree = "<group>"; };
+		EA1BD5C41AFBC8AE0010FB7C /* RBUtils.podspec.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = RBUtils.podspec.json; sourceTree = SOURCE_ROOT; };
 		EAD51E7586C4C18A5933A727 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -135,6 +136,7 @@
 		EA1BD5801AFBBD720010FB7C /* RBUtils */ = {
 			isa = PBXGroup;
 			children = (
+				EA1BD5C41AFBC8AE0010FB7C /* RBUtils.podspec.json */,
 				EA1BD5AF1AFBBE2A0010FB7C /* Foundation */,
 				EA1BD5A01AFBBE240010FB7C /* RBCons.h */,
 				EA1BD5A11AFBBE240010FB7C /* RBCons.m */,
