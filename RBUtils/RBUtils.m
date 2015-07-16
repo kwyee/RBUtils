@@ -8,6 +8,3 @@
 
 #import "RBUtils.h"
 
-@implementation RBUtils
-
-@end

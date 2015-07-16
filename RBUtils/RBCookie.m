@@ -1,6 +1,8 @@
 
 #import "RBCookie.h"
 
+#import "NSMutableDictionary+RBUtil.h"
+
 @implementation RBCookie
 
 #define RBUserTempCookieJarKey @"kRBUserTempCookieJar"
@@ -78,16 +80,16 @@
 
 + (NSMutableDictionary *)cookie2dictionary:(NSHTTPCookie *)cookie {
     NSMutableDictionary *result = [[NSMutableDictionary alloc] init];
-    [result setObject:cookie.comment forKey:NSHTTPCookieComment];
-    [result setObject:cookie.commentURL forKey:NSHTTPCookieCommentURL];
-    [result setObject:cookie.isSessionOnly ? @"TRUE" : @"FALSE" forKey:NSHTTPCookieDiscard];
-    [result setObject:cookie.domain forKey:NSHTTPCookieDomain];
-    [result setObject:cookie.expiresDate forKey:NSHTTPCookieExpires];
-//    [result setObject:cookie. forKey:NSHTTPCookieMaximumAge];
-    [result setObject:cookie.name forKey:NSHTTPCookieName];
-//    [result setObject:cookie. forKey:NSHTTPCookieOriginURL];
-    [result setObject:cookie.path forKey:NSHTTPCookiePath];
-//    [result setObject:cookie.portList forKey:NSHTTPCookiePort];
+    [result safeSetObject:cookie.comment forKey:NSHTTPCookieComment];
+    [result safeSetObject:cookie.commentURL forKey:NSHTTPCookieCommentURL];
+//    [result safeSetObject:cookie.isSessionOnly ? @"TRUE" : @"FALSE" forKey:NSHTTPCookieDiscard]; TODO(kwyee):
+    [result safeSetObject:cookie.domain forKey:NSHTTPCookieDomain];
+    [result safeSetObject:cookie.expiresDate forKey:NSHTTPCookieExpires];
+//    [result safeSetObject:cookie. forKey:NSHTTPCookieMaximumAge];
+    [result safeSetObject:cookie.name forKey:NSHTTPCookieName];
+//    [result safeSetObject:cookie. forKey:NSHTTPCookieOriginURL];
+    [result safeSetObject:cookie.path forKey:NSHTTPCookiePath];
+//    [result safeSetObject:cookie.portList forKey:NSHTTPCookiePort];
     if (cookie.secure) {
         [result setObject:@"TRUE" forKey:NSHTTPCookieSecure];
     }

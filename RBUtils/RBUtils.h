@@ -8,6 +8,8 @@
 
 #import <Foundation/Foundation.h>
 
-@interface RBUtils : NSObject
+#import "RBCookie.h"
+#import "RBCons.h"
+#import "UIView+RBUtil.h"
 
-@end
+

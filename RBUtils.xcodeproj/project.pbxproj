@@ -28,6 +28,9 @@
 		EA1BD5C61AFBCA970010FB7C /* RBUtils.podspec in Resources */ = {isa = PBXBuildFile; fileRef = EA1BD5C51AFBCA970010FB7C /* RBUtils.podspec */; };
 		EA1BD5C81AFBCBD20010FB7C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA1BD5C71AFBCBD20010FB7C /* Foundation.framework */; };
 		EA1BD5CA1AFBCBD70010FB7C /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA1BD5C91AFBCBD70010FB7C /* QuartzCore.framework */; };
+		EA37D1F41B585A3A002897A7 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA37D1F31B585A3A002897A7 /* AVFoundation.framework */; };
+		EA37D1F61B585A3F002897A7 /* AVKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA37D1F51B585A3F002897A7 /* AVKit.framework */; };
+		EA37D1FC1B585A77002897A7 /* AVPlayer+RBScreenshot.m in Sources */ = {isa = PBXBuildFile; fileRef = EA37D1FB1B585A77002897A7 /* AVPlayer+RBScreenshot.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -86,6 +89,10 @@
 		EA1BD5C51AFBCA970010FB7C /* RBUtils.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = RBUtils.podspec; sourceTree = "<group>"; };
 		EA1BD5C71AFBCBD20010FB7C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		EA1BD5C91AFBCBD70010FB7C /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		EA37D1F31B585A3A002897A7 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		EA37D1F51B585A3F002897A7 /* AVKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVKit.framework; path = System/Library/Frameworks/AVKit.framework; sourceTree = SDKROOT; };
+		EA37D1FA1B585A77002897A7 /* AVPlayer+RBScreenshot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AVPlayer+RBScreenshot.h"; sourceTree = "<group>"; };
+		EA37D1FB1B585A77002897A7 /* AVPlayer+RBScreenshot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AVPlayer+RBScreenshot.m"; sourceTree = "<group>"; };
 		EAD51E7586C4C18A5933A727 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -94,6 +101,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA37D1F61B585A3F002897A7 /* AVKit.framework in Frameworks */,
+				EA37D1F41B585A3A002897A7 /* AVFoundation.framework in Frameworks */,
 				EA1BD5CA1AFBCBD70010FB7C /* QuartzCore.framework in Frameworks */,
 				EA1BD5C81AFBCBD20010FB7C /* Foundation.framework in Frameworks */,
 				B149937A5D5D70ADB7B0911A /* libPods.a in Frameworks */,
@@ -184,6 +193,8 @@
 				EA1BD5A51AFBBE240010FB7C /* RBUtilMath.m */,
 				EA1BD5A61AFBBE240010FB7C /* UIView+RBUtil.h */,
 				EA1BD5A71AFBBE240010FB7C /* UIView+RBUtil.m */,
+				EA37D1FA1B585A77002897A7 /* AVPlayer+RBScreenshot.h */,
+				EA37D1FB1B585A77002897A7 /* AVPlayer+RBScreenshot.m */,
 			);
 			name = Foundation;
 			sourceTree = "<group>";
@@ -191,6 +202,8 @@
 		FA8A24287D93C7C145F49F60 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				EA37D1F51B585A3F002897A7 /* AVKit.framework */,
+				EA37D1F31B585A3A002897A7 /* AVFoundation.framework */,
 				EA1BD5C91AFBCBD70010FB7C /* QuartzCore.framework */,
 				EA1BD5C71AFBCBD20010FB7C /* Foundation.framework */,
 				02C7CC1206F9FAE8E8E84841 /* libPods.a */,
@@ -325,6 +338,7 @@
 				EA1BD5AE1AFBBE240010FB7C /* UIView+RBUtil.m in Sources */,
 				EA1BD5AD1AFBBE240010FB7C /* RBUtilMath.m in Sources */,
 				EA1BD5A81AFBBE240010FB7C /* NSArray+RBUtil.m in Sources */,
+				EA37D1FC1B585A77002897A7 /* AVPlayer+RBScreenshot.m in Sources */,
 				EA1BD5AB1AFBBE240010FB7C /* RBCons.m in Sources */,
 				EA1BD5AA1AFBBE240010FB7C /* NSMutableDictionary+RBUtil.m in Sources */,
 				EA1BD5841AFBBD720010FB7C /* RBUtils.m in Sources */,

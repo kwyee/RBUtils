@@ -10,4 +10,5 @@
 
 @interface NSMutableDictionary (RBUtil)
 
+- (void)safeSetObject:(id)anObject forKey:(id<NSCopying>)aKey;
 @end

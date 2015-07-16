@@ -10,4 +10,11 @@
 
 @implementation NSMutableDictionary (RBUtil)
 
+- (void)safeSetObject:(id)anObject forKey:(id<NSCopying>)aKey {
+    if (!anObject) {
+        return;
+    }
+    [self setObject:anObject forKey:aKey];
+}
+
 @end
